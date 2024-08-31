@@ -4,9 +4,9 @@ import logojp from "../../../public/img/logojp.png";
 
 export default function Footer() {
   return (
-    <footer className="flex justify-around items-center py-4">
+    <footer className="flex justify-around items-center py-4 mt-32">
       <div className='flex items-center'>
-        <Image src={logojp} alt="" className='rounded-full' width="110" height="100" />
+        <Image src={logojp} alt="" className='rounded-full below-xg:hidden' width="110" height="100" />
         <p className='text-center ml-4'>Mentions légales | Politique de confidentialité</p> 
       </div>
       <div className='flex items-center'>

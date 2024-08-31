@@ -65,7 +65,7 @@ const images = [
 ];
 export default function ParallaxCarousel() {
   return (
-    <div className="flex-carou relative">
+    <div className="flex-carou relative mt-32">
         <div className="blur-zone left"></div>
         <div className="w-full z-0 relative">
     <div className="parallax-carousel">
@@ -85,7 +85,7 @@ export default function ParallaxCarousel() {
           ))}
         </Swiper>
         {/* carrouselle 2 */}
-        <Swiper loop={true} slidesPerView={7} modules={[Autoplay, Pagination, Navigation]} autoplay={{ delay: 0, disableOnInteraction: false,  }} spaceBetween={35} speed={1500} className="swiper-wrapper">
+        <Swiper loop={true} slidesPerView={7} modules={[Autoplay, Pagination, Navigation]} autoplay={{ delay: 0, disableOnInteraction: false,  }} spaceBetween={35} speed={1500} className="swiper-wrapper  mt-10">
           {images.map(image => (
             <SwiperSlide key={image.title} >
               <div className="parallax-bg items-center flex">

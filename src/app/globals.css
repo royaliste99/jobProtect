@@ -31,3 +31,27 @@ div#__next {
     overflow: hidden;
     text-overflow: ellipsis;
   }
+  .borderHoverA{
+    border-width: 4px;
+    border-style: solid;
+    border-color: white;
+  }
+  .borderHoverA:hover{
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to left, white, #FFDC1D) 1;
+    box-shadow: 0px 4px 25px 0px rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+  }
+  .borderHoverB{
+    border-width: 4px;
+    border-style: solid;
+    border-color: #CDFF0C;
+  }
+  .borderHoverB:hover{
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to right, white, #CDFF0C) 1;
+    box-shadow: 0px 4px 25px 0px rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+  }

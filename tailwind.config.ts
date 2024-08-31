@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'below-lg': { 'max': '1024px' },
+        'below-xg': { 'max': '573px' }, 
+      },
       fontSize: {
       '40': '40px', 
       '16': '16px', 

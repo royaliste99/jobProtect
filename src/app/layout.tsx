@@ -17,10 +17,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+        />
+        {/* Charger le script de manière asynchrone */}
+        <script
+          src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+          async
+        />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
 }
+
