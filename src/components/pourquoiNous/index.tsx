@@ -8,7 +8,7 @@ import rapide from "../../../public/img/rapide.svg";
 
 export default function PourquoiNous() {
   return (
-    <div className='px-14 mt-32'>
+    <div className='container mx-auto px-4 mt-32'>
       <div className="inline-block bg-custom-gradient text-white text-4xl mb-10 p-2 whitespace-nowrap">
         <p>Pourquoi nous ?</p>
       </div>
