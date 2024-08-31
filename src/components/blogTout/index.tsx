@@ -68,29 +68,27 @@ export default function BlogTout() {
                 className="card flex flex-col items-start p-6 bg-white transition-shadow duration-300"
               >
                 {/* Image avec box-shadow appliqué sur les côtés gauche et droit */}
-                <div className="relative w-full h-40 mb-4">
+                <div className="relative w-full h-40 mb-4 flex-shrink-0">
                   <Image 
                     src={urlFor(post.mainImage.asset._ref).url()}
                     alt={post.title}
-                    width={500} // Largeur fixe
-                    height={300} // Hauteur fixe
-                    layout="responsive"
-                    className="w-full h-48 object-cover relative z-10"
+                    layout="fill"
+                    className="w-full h-full object-cover relative z-10"
                     style={{
                       boxShadow: "10px 5px 15px rgba(128, 128, 128, 0.5), -10px 5px 15px rgba(128, 128, 128, 0.5)", // Ombres à gauche et à droite uniquement
                       }}
                   />
                 </div>
 
-                <p className="text-gray-500 mb-2">
+                <p className="text-gray-500 mb-2 min-h-[24px]">
                   {new Date(post.publishedAt).toLocaleDateString('fr-FR', {
                     year: 'numeric',
                     month: 'long',
                     day: 'numeric',
                   })}
                 </p>
-                <h2 className="text-lg font-bold mb-2">{post.title}</h2>
-                <p className="text-gray-700 mb-4">{truncatedText}</p>
+                <h2 className="text-lg font-bold mb-2 min-h-[24px]">{post.title}</h2>
+                <p className="text-gray-700 mb-4 min-h-[48px]">{truncatedText}</p>
 
                 <div className="mt-auto self-end">
                   <Link href={`/page/article/${post._id}`} passHref>

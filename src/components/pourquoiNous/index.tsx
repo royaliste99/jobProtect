@@ -9,8 +9,8 @@ import rapide from "../../../public/img/rapide.svg";
 export default function PourquoiNous() {
   return (
     <div className='px-14 mt-32'>
-      <div className="inline-block bg-custom-gradient text-white text-4xl mb-10 p-2">
-        Pourquoi nous ?
+      <div className="inline-block bg-custom-gradient text-white text-4xl mb-10 p-2 whitespace-nowrap">
+        <p>Pourquoi nous ?</p>
       </div>
       <div className="flex justify-between w-full p-12 below-lg:flex-col below-xg:p-4">
         <div className="flex flex-col items-center text-center mx-4 flex-1">
