@@ -2,32 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body,
+div#__next {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --swiper-wrapper-transition-timing-function: linear;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.form {
+    border-radius: 10px;
+    border: 0.5px solid #58C7FE;
+    background: linear-gradient(104deg, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.10) 100%);
+    box-shadow: 0px 4px 25px 0px rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .card img {
+    max-height: 200px;
+    width: 100%;
+    object-fit: cover;
   }
-}
+  .card .prose p {
+    max-height: 60px; /* Ajuster selon vos besoins */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
