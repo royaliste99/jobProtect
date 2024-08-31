@@ -2,7 +2,7 @@
 import Header from "@/components/header";
 import ParallaxCarousel from "@/components/carou";
 import Main from "@/components/main";
-import NouveauArticle from "@/components/blog";
+import Blog from "@/components/blog";
 import Footer from "@/components/footer";
 
 
@@ -12,7 +12,7 @@ export default function Home() {
       <Header/>
       <ParallaxCarousel/>
       <Main/>
-      <NouveauArticle/>
+      <Blog/>
       <Footer/>
     </main>
   );
