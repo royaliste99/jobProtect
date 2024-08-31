@@ -16,7 +16,7 @@ export default function PourquoiNous() {
         <div className="flex flex-col items-center text-center mx-4 flex-1">
           <Image src={camion} alt="camion" className='' />
           <p className="font-bold mt-4 bg-D5FE04 p-2 mb-4">LIVRAISON RAPIDE</p>
-          <p className='border-x-2 border-t-2 border-black w-full flex-1 p-8 mt-4 '>Profitez d’un délais de livraison rapide</p>
+          <p className='border-x-2 border-t-2 border-black w-full flex-1 p-8 mt-4 '>Profitez d&apos;un délais de livraison rapide</p>
         </div>
         <div className="flex flex-col items-center text-center mx-4 flex-1">
           <Image src={rapide} alt="rapide" className='' />
@@ -26,7 +26,7 @@ export default function PourquoiNous() {
         <div className="flex flex-col items-center text-center mx-4 flex-1">
           <Image src={personnalisation} alt="personnalisation" className='' />
           <p className="font-bold mt-4 bg-D5FE04 p-2 mb-4 ">PERSONNALISATION EPI</p>
-          <p className='border-x-2 border-t-2 border-black w-full flex-1 p-8 mt-4'>Profitez de notre personnalisation d’Equipements de Protections Individuels à moindre coûts</p>
+          <p className='border-x-2 border-t-2 border-black w-full flex-1 p-8 mt-4'>Profitez de notre personnalisation d&apos;Equipements de Protections Individuels à moindre coûts</p>
         </div>
       </div>
     </div>

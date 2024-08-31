@@ -78,7 +78,7 @@ export default function Contacte() {
                                 onChange={(e) => setFormData({ ...formData, consent: e.target.checked })}
                                 required
                             />
-                            <p>J’accepte que mes données soient mémorisées dans l’unique but d’être recontacté</p>
+                            <p>J&apos;accepte que mes données soient mémorisées dans l&apos;unique but d&apos;être recontacté</p>
                         </label>
                         <button type="submit" className="p-2 bg-white rounded text-black cursor-pointer ml-72 below-xg:ml-0">
                             Envoyer

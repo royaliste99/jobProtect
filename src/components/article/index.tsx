@@ -1,5 +1,6 @@
 import { client, urlFor } from '../../../lib/sanity';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface ArticleContentProps {
   title: string;
@@ -10,9 +11,12 @@ interface ArticleContentProps {
 const ArticleContent = ({ title, imageRef, body }: ArticleContentProps) => {
   return (
     <div className="p-6 mt-32 below-xg:mt-12">
-      <img
+      <Image
         src={urlFor(imageRef).url()}
         alt={title}
+        width={500} // Largeur fixe
+        height={300} // Hauteur fixe
+        layout="responsive"
         style={{
             maxHeight: '600px',
             width: '100%',
@@ -33,7 +37,7 @@ const ArticleContent = ({ title, imageRef, body }: ArticleContentProps) => {
         </Link>
         <Link href="/" passHref>
           <button className="flex items-center text-black bg-white py-2 px-6 hover:bg-gray-100 transition-colors duration-300">
-            Retour à l'accueil
+            Retour à l&apos;accueil
           </button>
         </Link>
       </div>
