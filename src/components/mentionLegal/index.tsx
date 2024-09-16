@@ -34,9 +34,9 @@ export default function MentionLegal() {
         Le logo et les éléments graphiques présents sur ce site sont la propriété exclusive de Maxime Petit. Toute reproduction, distribution, modification, adaptation ou publication, même partielle, de ces éléments est strictement interdite sans l&apos;autorisation écrite préalable de Maxime Petit.
       </p>
 
-      <h2 className='text-2xl font-semibold mb-4'>6. Conditions d’utilisation du site :</h2>
+      <h2 className='text-2xl font-semibold mb-4'>6. Conditions d&apos;utilisation du site :</h2>
       <p className='mb-4'>
-        Le site est accessible gratuitement à tout utilisateur disposant d'un accès à Internet. L&apos;éditeur ne peut être tenu responsable de tout dysfonctionnement du site ou des interruptions de service. L&apos;utilisateur du site s&apos;engage à ne pas perturber le bon fonctionnement du site, ni à tenter de porter atteinte à son intégrité.
+        Le site est accessible gratuitement à tout utilisateur disposant d&apos;un accès à Internet. L&apos;éditeur ne peut être tenu responsable de tout dysfonctionnement du site ou des interruptions de service. L&apos;utilisateur du site s&apos;engage à ne pas perturber le bon fonctionnement du site, ni à tenter de porter atteinte à son intégrité.
       </p>
 
       <h2 className='text-2xl font-semibold mb-4'>7. Politique de confidentialité :</h2>
