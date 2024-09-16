@@ -11,56 +11,48 @@ import { Swiper as SwiperType } from 'swiper';
 
 const images = [
   {
-    title: "neofeu",
-    imageUrl: "/logo/img/neofeu.webp",
+    title: "cepovett",
+    imageUrl: "/logo/img/cepovett.jpg",
   },
   {
-    title: "newWaves",
-    imageUrl: "/logo/img/newWaves.webp",
+    title: "Falk&Ross",
+    imageUrl: "/logo/img/Falk&Ross.png",
   },
   {
-    title: "nordways",
-    imageUrl: "/logo/img/nordways.webp",
+    title: "lemaitre",
+    imageUrl: "/logo/img/lemaitre.png",
   },
   {
-    title: "parade",
-    imageUrl: "/logo/img/parade.webp",
-  },
-  {
-    title: "remi",
-    imageUrl: "/logo/img/remi.webp",
+    title: "Euro-Protection",
+    imageUrl: "/logo/img/Logo_Euro-Protection.jpg",
   },
   {
     title: "s24",
-    imageUrl: "/logo/img/s24.webp",
+    imageUrl: "/logo/img/logo-s24.jpg",
   },
   {
-    title: "showa",
-    imageUrl: "/logo/img/showa.webp",
+    title: "lShopTeam",
+    imageUrl: "/logo/img/lShopTeam.jpeg",
   },
   {
-    title: "sols",
-    imageUrl: "/logo/img/sols.webp",
+    title: "molinel",
+    imageUrl: "/logo/img/molinel.webp",
   },
   {
-    title: "timberland",
-    imageUrl: "/logo/img/timberland.webp",
+    title: "REMI-CONFECTION",
+    imageUrl: "/logo/img/REMI-CONFECTION.webp",
+  },
+  {
+    title: "Sols",
+    imageUrl: "/logo/img/Sols.png",
   },
   {
     title: "tractel",
-    imageUrl: "/logo/img/tractel.webp",
+    imageUrl: "/logo/img/tractel-logo.png",
   },
   {
     title: "u-power",
-    imageUrl: "/logo/img/u-power.webp",
-  },
-  {
-    title: "univet",
-    imageUrl: "/logo/img/univet.webp",
-  },
-  {
-    title: "utility",
-    imageUrl: "/logo/img/utility.webp",
+    imageUrl: "/logo/img/Upower.png",
   },
 ];
 export default function ParallaxCarousel() {

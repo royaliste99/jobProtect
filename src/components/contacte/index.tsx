@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import logojp from "../../../public/img/logojp.png";
+import logojp from "../../../public/img/logoDupont.svg";
 
 export default function Contacte() {
     const [formData, setFormData] = useState({
@@ -37,7 +37,7 @@ export default function Contacte() {
     return (
         <div className="relative w-full bg-custom-image bg-no-repeat bg-cover bg-bottom h-screen flex flex-col justify-center items-center mt-32">
             <div className="flex flex-row items-center gap-40 relative z-10 below-lg:flex-col below-lg:gap-10">
-                <Image src={logojp} alt="Logo" className='rounded-full below-xg:hidden' width="300 " height="200 " />
+                <Image src={logojp} alt="Logo" className='rounded-full below-xg:hidden' width={342} height="200 " />
                 
                     <form onSubmit={handleSubmit} className='w-full max-w-md gap-6 flex flex-col p-6 form below-xg:max-w-xs' id='formulaire'>
                     <p className='text-2xl font-bold justify-items-center text-center text-white'>

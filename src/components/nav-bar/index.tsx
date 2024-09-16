@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import logojp from "../../../public/img/logojp.png"
+import logojp from "../../../public/img/logoDupont.svg"
 export default  function Navbar() {
     return (
         <div className="flex justify-between mx-25 below-xg:mx-10 below-xg:flex-col below-xg:items-center">
