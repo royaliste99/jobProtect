@@ -16,7 +16,7 @@ export default function PourquoiNous() {
         <div className="flex flex-col items-center text-center mx-4 flex-1">
           <Image src={camion} alt="camion" className=''/>
           <p className="font-bold mt-4 bg-D5FE04 p-2 mb-4">PROXIMITÉ</p>
-          <p className='border-x-2 border-t-2 border-black w-full flex-1 p-8 mt-4'>Profitez d&apos;un délais de livraison rapide</p>
+          <p className='border-x-2 border-t-2 border-black w-full flex-1 p-8 mt-4'>Un accompagnement efficace sur chaque chantier.</p>
         </div>
         <div className="flex flex-col items-center text-center mx-4 flex-1">
           <Image src={rapide} alt="rapide" className=''/>

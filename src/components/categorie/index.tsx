@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import chaussure from "../../../public/img/chaussure-epi.svg"
-import gants from "../../../public/img/gants-epi.svg"
+import chantier from "../../../public/img/chantier1.jpg"
 import masqueProtection from "../../../public/img/masque-de-protection-epi.svg"
 import pantalon from "../../../public/img/pantalon-epi.svg"
 import veste from "../../../public/img/veste-epi.svg"
@@ -37,8 +37,8 @@ export default function Categorie() {
           <p className="absolute bottom-1 right-10 lg:right-20 p-2 text-white font-bold italic text-36 below-xg:text-2xl">CHAUSSURES</p>
         </div>
         <div className="relative w-full h-64 lg:h-full lg:max-w-Protection below-lg:mt-15px">
-        <Image src={gants} alt="Gants" layout="fill" className="object-cover" />
-          <p className="absolute top-4 left-5 p-2 text-white font-bold italic text-36 below-xg:text-2xl">S&apos;OCCUPE DE <br /> VOTRE SECURITER</p>
+        <Image src={chantier} alt="veste de chantier" layout="fill" className="object-cover" />
+          <p className="absolute top-4 left-5 p-2 text-white font-bold italic text-36 below-xg:text-2xl">ON S&apos;OCCUPE DE <br /> VOTRE SECURITER</p>
         </div>
       </section>
 
