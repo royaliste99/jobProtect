@@ -1,5 +1,5 @@
 "use client";
-
+import Link from 'next/link';
 import React, { useState } from 'react';
 import Image from 'next/image';
 import logojp from "../../../public/img/logoDupont.svg";
@@ -15,8 +15,9 @@ export default function Navbardeux() {
 
     return (
         <div className="flex justify-between items-center mx-25 mt-26 below-xg:mx-10 below-xg:flex-col below-xg:items-center">
-            <Image src={logojp} alt="Logo" className='rounded-full below-xg:mb-12' width="190" height="100" />
-            
+            <Link href="/">
+                    <Image src={logojp} alt="Logo" className='rounded-full below-xg:mb-12' width="190" height="100" />
+                </Link>
             <div className="flex items-center space-x-5">
                 <a className="ml-5" href="/#blog">Actualités</a>
                 
