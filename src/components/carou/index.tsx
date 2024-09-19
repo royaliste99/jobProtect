@@ -62,7 +62,17 @@ export default function ParallaxCarousel() {
         <div className="w-full z-0 relative">
     <div className="parallax-carousel">
         {/* carrouselle 1 */}
-        <Swiper loop={true} slidesPerView={7} modules={[Autoplay, Pagination, Navigation]} autoplay={{ delay: 0, disableOnInteraction: false, reverseDirection: true, }} spaceBetween={35} speed={1500} className="swiper-wrapper" onSwiper={(swiper: SwiperType) => {
+        <Swiper loop={true} breakpoints={{
+    320: {
+      slidesPerView: 3,  // 3 slides pour les écrans moyens
+    },
+    550: {
+      slidesPerView: 5,  // 3 slides pour les écrans moyens
+    },
+    768: {
+      slidesPerView: 7,  // 7 slides pour les grands écrans
+    }
+  }} modules={[Autoplay, Pagination, Navigation]} autoplay={{ delay: 0, disableOnInteraction: false, reverseDirection: true, }} spaceBetween={35} speed={1500} className="swiper-wrapper" onSwiper={(swiper: SwiperType) => {
           swiper.on('slideChangeTransitionStart', () => {
             
           });
@@ -77,7 +87,17 @@ export default function ParallaxCarousel() {
           ))}
         </Swiper>
         {/* carrouselle 2 */}
-        <Swiper loop={true} slidesPerView={7} modules={[Autoplay, Pagination, Navigation]} autoplay={{ delay: 0, disableOnInteraction: false,  }} spaceBetween={35} speed={1500} className="swiper-wrapper  mt-10">
+        <Swiper loop={true} breakpoints={{
+    320: {
+      slidesPerView: 3,  // 3 slides pour les écrans moyens
+    },
+    550: {
+      slidesPerView: 5,  // 3 slides pour les écrans moyens
+    },
+    768: {
+      slidesPerView: 7,  // 7 slides pour les grands écrans
+    }
+  }} modules={[Autoplay, Pagination, Navigation]} autoplay={{ delay: 0, disableOnInteraction: false,  }} spaceBetween={35} speed={1500} className="swiper-wrapper  mt-10">
           {images.map(image => (
             <SwiperSlide key={image.title} >
               <div className="parallax-bg items-center flex">
