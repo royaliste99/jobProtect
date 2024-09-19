@@ -1,13 +1,11 @@
 "use client"
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay , Pagination, Navigation } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import 'swiper/css/autoplay';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import 'swiper/css';  // Importer le style de base de Swiper
+import 'swiper/css/pagination';  // Importer le style pour la pagination
+import 'swiper/css/navigation';  // Importer le style pour la navigation
 import Image from 'next/image';
-import { Swiper as SwiperType } from 'swiper';
 
 const images = [
   {
@@ -55,64 +53,61 @@ const images = [
     imageUrl: "/logo/img/Upower.png",
   },
 ];
+
 export default function ParallaxCarousel() {
   return (
     <div className="flex-carou relative mt-32">
-        <div className="blur-zone left"></div>
-        <div className="w-full z-0 relative">
-    <div className="parallax-carousel">
-        {/* carrouselle 1 */}
-        <Swiper loop={true} breakpoints={{
-    320: {
-      slidesPerView: 3,  // 3 slides pour les écrans moyens
-    },
-    550: {
-      slidesPerView: 5,  // 3 slides pour les écrans moyens
-    },
-    768: {
-      slidesPerView: 7,  // 7 slides pour les grands écrans
-    }
-  }} modules={[Autoplay, Pagination, Navigation]} autoplay={{ delay: 0, disableOnInteraction: false, reverseDirection: true, }} spaceBetween={35} speed={1500} className="swiper-wrapper" onSwiper={(swiper: SwiperType) => {
-          swiper.on('slideChangeTransitionStart', () => {
-            
-          });
-          
-          }}>
-          {images.map(image => (
-            <SwiperSlide key={image.title} >
-              <div className="parallax-bg items-center flex">
-                <Image src={image.imageUrl} alt={image.title} width={100} height={100} />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-        {/* carrouselle 2 */}
-        <Swiper loop={true} breakpoints={{
-    320: {
-      slidesPerView: 3,  // 3 slides pour les écrans moyens
-    },
-    550: {
-      slidesPerView: 5,  // 3 slides pour les écrans moyens
-    },
-    768: {
-      slidesPerView: 7,  // 7 slides pour les grands écrans
-    }
-  }} modules={[Autoplay, Pagination, Navigation]} autoplay={{ delay: 0, disableOnInteraction: false,  }} spaceBetween={35} speed={1500} className="swiper-wrapper  mt-10">
-          {images.map(image => (
-            <SwiperSlide key={image.title} >
-              <div className="parallax-bg items-center flex">
-                <Image src={image.imageUrl} alt={image.title} width={100} height={100}/>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      
-      
-      
-    </div>
-    </div>
-        <div className="blur-zone right"></div>
-        <style jsx>{`
+      <div className="blur-zone left"></div>
+      <div className="w-full z-0 relative">
+        <div className="parallax-carousel">
+          {/* Carrousel 1 */}
+          <Swiper
+            loop={true}
+            breakpoints={{
+              320: { slidesPerView: 3 },  // 3 slides pour petits écrans
+              550: { slidesPerView: 5 },  // 5 slides pour écrans moyens
+              768: { slidesPerView: 7 },  // 7 slides pour grands écrans
+            }}
+            modules={[Autoplay, Pagination, Navigation]}
+            autoplay={{ delay: 0, disableOnInteraction: false, reverseDirection: true }}
+            spaceBetween={35}
+            speed={1500}
+            className="swiper-wrapper"
+          >
+            {images.map((image) => (
+              <SwiperSlide key={image.title}>
+                <div className="parallax-bg items-center flex">
+                  <Image src={image.imageUrl} alt={image.title} width={100} height={100} />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          {/* Carrousel 2 */}
+          <Swiper
+            loop={true}
+            breakpoints={{
+              320: { slidesPerView: 3 },  
+              550: { slidesPerView: 5 },  
+              768: { slidesPerView: 7 },  
+            }}
+            modules={[Autoplay, Pagination, Navigation]}
+            autoplay={{ delay: 0, disableOnInteraction: false }}
+            spaceBetween={35}
+            speed={1500}
+            className="swiper-wrapper mt-10"
+          >
+            {images.map((image) => (
+              <SwiperSlide key={image.title}>
+                <div className="parallax-bg items-center flex">
+                  <Image src={image.imageUrl} alt={image.title} width={100} height={100} />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </div>
+      <div className="blur-zone right"></div>
+      <style jsx>{`
         .parallax-carousel {
           width: 100%;
           height: 100px;
@@ -129,7 +124,6 @@ export default function ParallaxCarousel() {
           width: 100%;
           height: 250px;
         }
-        
         .blur-zone {
           position: absolute;
           top: 0;
@@ -139,19 +133,14 @@ export default function ParallaxCarousel() {
           pointer-events: none; 
           background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
         }
-        
         .blur-zone.right {
           right: 0;
           background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
         }
-        
         .blur-zone.left {
           left: 0;
         }
-        
       `}</style>
-      
-      </div>
-      
+    </div>
   );
 }
