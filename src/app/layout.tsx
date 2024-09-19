@@ -27,7 +27,6 @@ export default function RootLayout({
           src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
           async
         />
-        <script src="https://www.google.com/recaptcha/enterprise.js?render=6LeGmUkqAAAAAM8chxtJ4jkjohdZJn7p147LhdIX"></script>
       </head>
       <body className={inter.className}>{children}</body>
     </html>
