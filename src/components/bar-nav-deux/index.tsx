@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import logojp from "../../../public/img/logoDupont.svg";
+import logojp from "../../../public/img/logoDupont.png";
 
 export default function Navbardeux() {
     // État pour gérer l'affichage des pop-ups

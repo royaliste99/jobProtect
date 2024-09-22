@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import logojp from "../../../public/img/logoDupont.svg";
+import logojp from "../../../public/img/logoDupont.png";
 
 export default function Contacte() {
     const [formData, setFormData] = useState({
