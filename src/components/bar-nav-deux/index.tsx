@@ -14,7 +14,7 @@ export default function Navbardeux() {
     const toggleEmailPopup = () => setShowEmailPopup(!showEmailPopup);
 
     return (
-        <div className="flex justify-between items-center mx-25 mt-26 below-xg:mx-10 below-xg:flex-col below-xg:items-center">
+        <div className="flex justify-between items-center mx-25 below-xg:mx-10 below-xg:flex-col below-xg:items-center">
             <Link href="/">
                     <Image src={logojp} alt="Logo" className='rounded-full below-xg:mb-12' width="190" height="100" />
                 </Link>

@@ -21,10 +21,6 @@ const images = [
     imageUrl: "/logo/img/lemaitre.png",
   },
   {
-    title: "Euro-Protection",
-    imageUrl: "/logo/img/Logo_Euro-Protection.jpg",
-  },
-  {
     title: "s24",
     imageUrl: "/logo/img/logo-s24.jpg",
   },
@@ -51,6 +47,10 @@ const images = [
   {
     title: "u-power",
     imageUrl: "/logo/img/Upower.png",
+  },
+  {
+    title: "Covergarde",
+    imageUrl: "/logo/img/Covergarde.jpeg",
   },
 ];
 
