@@ -16,16 +16,16 @@ export default function Categorie() {
       <section className="flex flex-col lg:flex-row w-full mb-15px h-auto lg:h-350px">
         <div className="relative w-full h-64 lg:h-full lg:max-w-gants mr-0 lg:mr-15px">
         <Image src={masqueProtection} alt="Masque de Protection" layout="fill" className="object-cover" />
-          <p className="absolute bottom-5 right-10 lg:right-20 p-2 text-white font-bold italic text-36 below-xg:text-lg">EQUIPEMENT DE PROTECTION INDIVIDUELLE</p>
+          <p className="absolute bottom-5 right-10 lg:right-20 p-2 text-white font-bold italic text-36 below-xg:text-lg">EQUIPEMENTS DE PROTECTION INDIVIDUELLE</p>
         </div>
         <div className="flex w-full h-64 lg:h-full below-lg:mt-15px">
           <div className="relative w-full h-64 lg:h-full lg:max-w-veste mr-15px">
             <Image src={veste} alt="Veste" layout="fill" className="object-cover" />
-            <p className="absolute bottom-5 right-4 lg:right-6 p-2 text-white font-bold italic text-36 below-xg:text-lg">VETEMENT PERSONNALISER </p>
+            <p className="absolute bottom-5 right-4 lg:right-6 p-2 text-white font-bold italic text-36 below-xg:text-lg">VETEMENTS DE TRAVAIL</p>
           </div>
           <div className="relative w-full h-64 lg:h-full lg:max-w-pantalon ">
             <Image src={pantalon} alt="Pantalon" layout="fill" className="object-cover" />
-            <p className="absolute bottom-5 left-4 p-2 text-white font-bold italic text-36 below-xg:text-lg">VETEMENT DE TRAVAIL</p>
+            <p className="absolute bottom-5 left-4 p-2 text-white font-bold italic text-36 below-xg:text-lg">VETEMENTS PERSONNALISÉS</p>
           </div>
         </div>
       </section>
@@ -34,11 +34,11 @@ export default function Categorie() {
       <section className="flex flex-col lg:flex-row w-full h-auto lg:h-350px">
         <div className="relative w-full h-64 lg:h-full lg:max-w-Chaussure mr-0 lg:mr-15px">
           <Image src={chaussure} alt="Chaussure" layout="fill" className="object-cover" />
-          <p className="absolute bottom-1 right-10 lg:right-20 p-2 text-white font-bold italic text-36 below-xg:text-lg">CHAUSSURES</p>
+          <p className="absolute bottom-1 right-10 lg:right-20 p-2 text-white font-bold italic text-36 below-xg:text-lg">CHAUSSURES DE SÉCURITÉ</p>
         </div>
         <div className="relative w-full h-64 lg:h-full lg:max-w-Protection below-lg:mt-15px">
         <Image src={chantier} alt="veste de chantier" layout="fill" className="object-cover" />
-          <p className="absolute top-4 left-5 p-2 text-white font-bold italic text-36 below-xg:text-lg">ON S&apos;OCCUPE DE <br /> VOTRE SECURITER</p>
+          <p className="absolute top-4 left-5 p-2 text-white font-bold italic text-36 below-xg:text-lg">ON S&apos;OCCUPE DE <br /> VOTRE SECURITÉ</p>
         </div>
       </section>
 
