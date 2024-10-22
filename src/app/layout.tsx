@@ -60,15 +60,7 @@ export default function RootLayout({
       <body className={inter.className}>
         {children}
 
-        {/* Footer pour le référencement local */}
-        <footer className="bg-gray-800 text-white text-center py-4 mt-10">
-          <p>© {new Date().getFullYear()} Estelle EPI - Beauvais, 60 000</p>
-          <p>
-            Vente d'équipements de protection individuelle (EPI), vêtements de
-            travail et chaussures de sécurité pour les professionnels et
-            particuliers.
-          </p>
-        </footer>
+        
       </body>
     </html>
   );

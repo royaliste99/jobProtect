@@ -12,10 +12,11 @@ export default function Footer() {
           <p className='text-center ml-4' >Mentions légales | Politique de confidentialité</p>
         </Link> 
       </div>
-      <div className='flex items-center'>
+      <div className='flex items-center flex-col'>
         <p>
-          © 2024 Dupont EPI. Tous droits réservés
+          © 2024 Dupont EPI. Tous droits réservés.
         </p>
+        <p>Beauvais, 60 000 - Équipements de Protection Individuelle (EPI)</p>
       </div>
     </footer>
   );
