@@ -1,4 +1,4 @@
-
+"use client"
 import Navbar from "../nav-bar";
 import Presentation from "../presentation";
 import Paralaxe from "@/components/paralaxe";

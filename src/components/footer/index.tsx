@@ -1,7 +1,9 @@
+"use client"
 import React from 'react';
 import Image from 'next/image';
 import logojp from "../../../public/img/logoDupont.png";
 import Link from 'next/link';
+
 
 export default function Footer() {
   return (

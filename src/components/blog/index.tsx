@@ -1,3 +1,4 @@
+"use client"
 import { useEffect, useState } from 'react';
 import { client, urlFor } from '../../../lib/sanity';
 import Link from 'next/link';

@@ -1,4 +1,4 @@
-"use client"
+
 import Header from "@/components/header";
 import ParallaxCarousel from "@/components/carou";
 import Main from "@/components/main";

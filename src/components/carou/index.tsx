@@ -1,10 +1,9 @@
-"use client"
+"use client";
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';  // Importer uniquement les modules nécessaires
 import 'swiper/css';  // Importer le style de base de Swiper
 import 'swiper/css/pagination';  // Importer le style pour la pagination
-import 'swiper/css/navigation';  // Importer le style pour la navigation
 import Image from 'next/image';
 
 const images = [
@@ -68,7 +67,7 @@ export default function ParallaxCarousel() {
               550: { slidesPerView: 5 },  // 5 slides pour écrans moyens
               768: { slidesPerView: 7 },  // 7 slides pour grands écrans
             }}
-            modules={[Autoplay, Pagination, Navigation]}
+            modules={[Autoplay, Pagination, Navigation]}  // Utilisation des modules nécessaires uniquement
             autoplay={{ delay: 0, disableOnInteraction: false, reverseDirection: true }}
             spaceBetween={35}
             speed={1500}
@@ -90,7 +89,7 @@ export default function ParallaxCarousel() {
               550: { slidesPerView: 5 },  
               768: { slidesPerView: 7 },  
             }}
-            modules={[Autoplay, Pagination, Navigation]}
+            modules={[Autoplay, Pagination, Navigation]}  // Utilisation des modules nécessaires uniquement
             autoplay={{ delay: 0, disableOnInteraction: false }}
             spaceBetween={35}
             speed={1500}
