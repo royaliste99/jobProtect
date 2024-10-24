@@ -22,7 +22,6 @@ const config: Config = {
         '26': '62px',
         '27': '40px',
         '28': '140px', 
-
       },
       colors: {
         headbackg: '#15141C',
@@ -40,24 +39,31 @@ const config: Config = {
       },
       maxWidth: {
         'gants': '45%',
-
         'teste': '55%',
-
         'veste': '52%',
         'pantalon': '48%',
-
         'Chaussure' : '58%',
         'Protection' : '42%',
       },
       margin: {
-        '15px': '15px', // Ajoute une valeur de marge personnalisée de 15px
+        '15px': '15px',
       },
       height: {
-        '350px': '350px', // Ajoute une valeur de hauteur personnalisée de 350 pixels
+        '350px': '350px',
       },
-      
     },
   },
   plugins: [],
+  purge: {
+    enabled: process.env.NODE_ENV === 'production',
+    content: [
+      './src/**/*.html',
+      './src/**/*.js',
+      './src/**/*.ts',
+      './src/**/*.jsx',
+      './src/**/*.tsx',
+      './src/**/*.mdx',
+    ],
+  },
 };
 export default config;
